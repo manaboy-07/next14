@@ -1,0 +1,5 @@
+Here i am learning how to create a group laypout that will be for just , login and register page,
+The filder being names (auth) means i dont need to do / auth /login in the url as it is a group folder
+
+its should be renamed as (with-auth-layout) as the folder name, then havig the folder and file for login and register who
+will be sharing the same layout.
