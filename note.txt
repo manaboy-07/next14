@@ -1,0 +1,19 @@
+Data Fetching
+1. Server Side Rendering (SSR)
+2. Static Site Generation (SSG)
+3. Incremental STatic Generation (ISR)
+SSR- dynamic sever rendered data, new rendering cycle i.e cache: 'no-store;,
+SSG- content that doesnt fetch frequently
+ISR - {next: {revalidate: 20}},statically fetched at build time, ISR is best
+
+for back-end , route.js files,
+route and page cant be together.
+create them in an api folder
+api/users then route.js.
+export async function GET(request){
+
+}
+
+Static and Dynamic Metadata
+
+

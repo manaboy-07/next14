@@ -1,0 +1,2 @@
+Catch ALL SEGMEnts - e.g documentation sites
+hint. Check docs folder

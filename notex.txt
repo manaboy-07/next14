@@ -1,0 +1,141 @@
+Please when reviewing kindly check the next05 page first and then the blog on how to generate dynamic pages and all
+check the next07 for api and route handlers
+
+
+You can create new pages in the app by adding a folder component
+Link uses href
+you can use a loading state, in the folder just name loading.tsx
+folders can also have error, error.tsx and go to docs and copy
+Next js applies it automatically
+read the docs
+
+NextJS 13.1 (reference dave gray on yt): 
+You can do smth like page.module.css, 
+also create automatic loading states,
+when you create a folder like about folder that contains the about pages
+
+NextJs 13.2 replace head.tsx
+Usage of metadata
+
+
+Dynamic Routing:
+Create a route you want e.g [name]
+
+MetaData - automaticlly changes title of page
+
+DATA-FETCHING:
+you can use server components
+fetch data in parallel
+loading ui, streaming an suspense
+
+
+
+
+USEFUL NextJS thing for applications NextJs applies automatically:
+1. loading with loading.tsx
+2. error boundary error.tsx copy code from docs
+3. provide built in not-found for error pages by convention of  not-found.tsx
+
+
+Google SSG, SSR and ISR
+SSG if you know the parameter in advanced
+
+BASICS = blog, next05, codedev
+API and Routing = rest, next07 or check for next-api on the desktop
+
+Look for next-api folder - sample project and middleware
+check the blog again on how to handle revalidation, using isr
+
+Revalidation:  86400 also known as isr
+config can only br in page or layout, check docs
+background revalidation - time interval
+On demand = based on an event
+
+node script
+require('crypto').randomBytes(16).toString('hex) //secret token in node js
+
+
+For Mutating Data Crud operations check next 11 / mutation
+also check docs in mutation page
+
+
+cache - no store acheves the same thing with revalidate = 0
+
+router.refresh() only works in a current route,
+you can acheive same thing using prefecth = false
+
+npm i @nextcanary - google it tho
+
+Next Js helps in
+Api routes
+Pre-rendering
+Support for Css modules
+File based Routing
+Authentication
+
+
+For Better Segments and Layout Check codedev
+to capture all params and also dynamic routes
+
+codedev:
+Optional and get all routes - docs folder
+Dynamic Routes - product folder
+When using links you and also add a replace prop 
+
+Pre-rendering and Data fetching
+1. Static Generation ; with and without data, ISG, , dynamic parameters
+2. SSR, serverside rendering
+Client Side data fetching
+
+
+What is prerendering ?
+
+Static Generation - A method or pre-rendering where the html pages are generated at build time
+The html wil all the data that makes up the content of the web page are generated in advance when you build your application
+This is the recommended method to pre-render pages whenever possible.
+Blog, E-commerce etc...
+Pages can be build once , cached by a cdn and served to the client almost instantly
+
+Dont worry much about Static genration  in development mode, next js by default
+It can be done with and without data
+
+How to use Static Generation ? 
+This is actually the default for it , the pages are built in build time
+
+We can use it to fecth data iff we know all the inputs or entries
+getSTatic Props runs at build time,
+the getStaticProp functions runs in the page not component 
+Html,JS and JSON file are generated
+Check next-prernder folder
+
+hollow circle  is Static
+filled circle indicates SSG, automatically generated , used the getSTatic Props
+
+
+You can import notfound from next navigation, set a condition and use it i.e notFOund()
+
+
+Check the next 14 folder , hello-world next14 app
+Private Folders naming convention usually begins with an underscore
+For folder groups or like grouping folders use the parenthesis naming convention i.e (auth)
+
+
+Layout also check the hello-wolrd in next14, you can add some header and navbar
+
+Nested Layout, can be applied to specific parts of a component , still check the hello-world folder
+
+MetaData Rules:
+Both layout.tsx and Page.tsx files can export metadata. if defined in a layout , it applies to all pages in that layout, but if defined in a page , it appliesto only that page.
+
+MetaData is read in order from the root level down ti the final page level
+
+loading.tsx
+error.tsx
+not-found.tsx
+
+are special filenames , you can easily look up gpt on how to use it
+
+
+
+
+
