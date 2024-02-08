@@ -1,2 +1,20 @@
 Catch ALL SEGMEnts - e.g documentation sites
 hint. Check docs folder
+
+404-page check not-found.tsx in the app folder, if a page is not-found based on some input just import not-found from next navigation.
+then notfount() 
+
+Authentication pages-(auth)
+Private folders are ommited in routing and convention usually named with an underscore
+
+RouteGroups - convention usually with () - check (auth)
+
+Layout - accepts children prop
+MetaData - Check producs/producid/page
+
+Meta-Data check blog and layout on how to use it.
+the 
+
+Styling active links please check the auth layout pg
+
+For how to use layout and template.tsx check 22 yt codeeveolution 

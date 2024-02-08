@@ -5,7 +5,7 @@ import Link from "next/link";
 //rename layout.tsx to template.tsx beacuse the other links save state of input
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-
+//Styling active links
 const navLinks = [
   { name: "Register", href: "/Register" },
 
@@ -25,7 +25,7 @@ export default function AuthLayout({
     <div>
       <div>
         <input
-          type='text'
+          type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
         />
@@ -37,7 +37,8 @@ export default function AuthLayout({
           <Link
             href={link.href}
             key={link.name}
-            className={isActive ? "font-bold" : "font-semi-bold"}>
+            className={isActive ? "font-bold" : "font-semi-bold"}
+          >
             {link.name}
           </Link>
         );

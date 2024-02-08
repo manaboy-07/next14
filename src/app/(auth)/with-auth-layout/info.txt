@@ -3,3 +3,5 @@ The filder being names (auth) means i dont need to do / auth /login in the url a
 
 its should be renamed as (with-auth-layout) as the folder name, then havig the folder and file for login and register who
 will be sharing the same layout.
+
+I can put the login and register folders here and thus they will have the same layout as designed in auth layout

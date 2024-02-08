@@ -1,6 +1,7 @@
 /** @format */
 
 //creating nested layout for specific components
+//this is for all realting to layout
 export default function ProductDetailsLayout({
   children,
 }: {

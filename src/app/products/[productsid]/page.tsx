@@ -20,7 +20,7 @@ export const generateMetadata = async ({
     title: `Product ${title}`,
   };
 };
-
+//you could also return it without the async function
 function ProductDetails({ params }: Props) {
   return <div>Product Details Page for {params.productsid}</div>;
 }
