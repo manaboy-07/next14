@@ -31,3 +31,10 @@ Naming convention is (.)fileName
 (.) to match segments on the same level
 (..) to match segments one level above
 (...) to match segments in to root directory
+pls check vid 32.
+
+Route-Handlers, RESTFUL-api
+check hello folder,
+route handlers can also be nexted as if they were page.tsx.
+page and route must not be in the same directory hence we use an api folder and store the route.ts there.
+Check comments folder
