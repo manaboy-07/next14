@@ -18,3 +18,16 @@ the
 Styling active links please check the auth layout pg
 
 For how to use layout and template.tsx check 22 yt codeeveolution 
+
+Error-handling using error.tsx check product review side. check vid 27
+
+Parallel route - complex-dashboard, like they can have thier own loading state and error state, vid 28
+Handling unmatched route- also check the complex-dashboard, @revenue using default.tsx
+
+Conditional Routes - @login in complex-dashboard
+
+Intercepting Routes - check f1,f2 folder.
+Naming convention is (.)fileName
+(.) to match segments on the same level
+(..) to match segments one level above
+(...) to match segments in to root directory
