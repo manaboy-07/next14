@@ -37,4 +37,7 @@ Route-Handlers, RESTFUL-api
 check hello folder,
 route handlers can also be nexted as if they were page.tsx.
 page and route must not be in the same directory hence we use an api folder and store the route.ts there.
-Check comments folder
+Check comments folder then route.ts, experiment with thunder client.
+for dynamic api routing pls check the [id]. here we studies path, and delete requets
+
+Handing URL query params, check comments first level folder
