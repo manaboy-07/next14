@@ -1,10 +1,17 @@
 import { comments } from "../data";
+import { redirect } from "next/navigation";
+// /comment/1
+//Now suppose our array has only comments of id up to 3, and we do comment/4
+//we need to handle this error this is where redirect comes in.
 //since we are not making use of the request parameter i have prefixed it with an underscore
 
 export async function GET(
   _request: Request,
   { params }: { params: { id: string } }
 ) {
+  if (parseInt(params.id) > comments.length) {
+    redirect("/comments");
+  }
   //first find the id
   const comment = comments.find(
     (comment) => comment.id === parseInt(params.id)

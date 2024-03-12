@@ -41,3 +41,31 @@ Check comments folder then route.ts, experiment with thunder client.
 for dynamic api routing pls check the [id]. here we studies path, and delete requets
 
 Handing URL query params, check comments first level folder
+
+
+Headers in Route Handlers-
+http headers represent the metadata associated with an api request and response.
+
+Request Headers :
+These are sent by the client suach as a web browser to the server they contain essesntial information about the request, which 
+helps the server understand and process it correctly
+'User-Agent' which identifies the browser and the os to the server
+'Accept-header' vids, text
+'Authorization'
+'Response Headers' e.g content-type, the data type of the content 
+Checkout profile folder
+
+
+COOkies in Route Handlers
+
+Cookies are small pieces of data that a server send to a users web browser
+The browser ,ay store the cookie and send it back to the same server with later requests
+-Cookies are mainly used for three purposes
+1. Session management like logins and shoppint carts
+2. Personalization like user preferences and themes
+3. Tracking like recording and analyzing user behaviour again check profile folder
+
+
+Caching in Route Handlers
+
+route Handlers are cached by default when using the Get method with response object in NextJsCheck out time folder
