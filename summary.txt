@@ -69,3 +69,12 @@ The browser ,ay store the cookie and send it back to the same server with later 
 Caching in Route Handlers
 
 route Handlers are cached by default when using the Get method with response object in NextJsCheck out time folder
+
+
+MiddleWare, - check src folder , parts where it will be active .
+Custom matcher and COnditonal
+
+Server Side sols
+1. SSG static site generation - occurs at bulild time,it is ideal for content that doesnt change often e.g blog posts
+
+SSR- renders pages on demand in response to user requests , it is suitable for personalized content like social media feeds where HTML depends on the logged-in user
