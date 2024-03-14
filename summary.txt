@@ -78,3 +78,16 @@ Server Side sols
 1. SSG static site generation - occurs at bulild time,it is ideal for content that doesnt change often e.g blog posts
 
 SSR- renders pages on demand in response to user requests , it is suitable for personalized content like social media feeds where HTML depends on the logged-in user
+
+Suspense SSR architecture
+
+Client Componetns - handle activities , localstorage
+Server Componetns - operates on the server, the code stays on the Serverbenefits
+improved data fetching,
+enables caching
+
+Real time applications will require ssg, useing the getServerSideProps action
+SSG - is the default by next js
+ISR - uses revalidate
+
+Incremental Static Regeneration (ISR) is a feature introduced by Next.js that allows you to update static pages at runtime without requiring a full rebuild. It's a hybrid approach that combines the benefits of Static Site Generation (SSG) with the ability to revalidate and update pages dynamically as new data becomes available. ISR is particularly useful for scenarios where you want to provide frequently updated content while still benefiting from the performance advantages of static pages.
