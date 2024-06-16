@@ -5,3 +5,4 @@ export async function GET() {
   });
 } //in build mode it doesnt change, its cachin
 //so if we dont want it to be cahced there wre ways
+//the one above

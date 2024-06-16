@@ -86,8 +86,21 @@ Server Componetns - operates on the server, the code stays on the Serverbenefits
 improved data fetching,
 enables caching
 
-Real time applications will require ssg, useing the getServerSideProps action
+Real time applications will require ssr, useing the getServerSideProps action
 SSG - is the default by next js
-ISR - uses revalidate
+ISR - uses revalidate , check either chatgpt, next14 or any next folders on your desktop
 
 Incremental Static Regeneration (ISR) is a feature introduced by Next.js that allows you to update static pages at runtime without requiring a full rebuild. It's a hybrid approach that combines the benefits of Static Site Generation (SSG) with the ability to revalidate and update pages dynamically as new data becomes available. ISR is particularly useful for scenarios where you want to provide frequently updated content while still benefiting from the performance advantages of static pages.
+
+Server Rendering Strageies
+1. Static Rendering
+2. Dynamic rendering
+3. STreaming
+
+Static rendering - pages are built in advanced, e-commerce product page, blog,
+Dynamic rendering is a server rendering strategy where routes are rendered for each user at request time
+
+Steaming - allows us to render components that take time, using the suspense
+
+
+react-slick is a carousel libraru

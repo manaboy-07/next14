@@ -1,0 +1,25 @@
+We used db.json as our database to learn about some important things , and the server.js just makes sure it rund tho it doesnt work, its the explantion we are after
+
+when you do normal fetch , it doesnt update as next js automatically caches and is used for the any further requests
+
+
+Data Cahce: is a server side cache that persists the result of the data fetches across incoming server requests and deployments.
+It improves app performance by eliminating the need to re-fetch data from your data source with every request
+
+
+You can opt out of caching . for individual data ferches , you can opt out by setting cache to no store, so it is fetch everytine its called , 
+
+By default Nextjs will cache fetch() requests that occurs before any dynamic functions i.e cookies(), headers(), searchParams are used and will not cache requets found after dynamic functions.
+
+2. Request Memoization: is a technique that duplicated requests for the same data within a single render pass. This approach allows for re-use of data in React Component tree, prevents network calls and enhances performance
+When the same data is needed across different components in a route e.g layout or multiple components, it elimated the need to fetch data at the top of the tree and pass props between components.
+Instead data can be fetched directly within the components that require it, without concerns about the performance implications of multiple network requets for the same data 
+
+3. Revalidation: when you want to refetch data once every time period, used for information that changes occasionally,
+Revalidation is the process of purging the data cache and refetching yhe latest data.
+
+Next js automatically revalidates data after a certain amout of time has passed.
+if the parent is revelidated so willl the children.
+
+
+When fetching data in client just use the normal useEffec, state etc. 

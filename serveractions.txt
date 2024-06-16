@@ -1,0 +1,46 @@
+1. Allows server side mutations without unnecessary api endpoints
+2. reduces client side js
+3. supports progressively enhanced forms
+
+
+CSR -drawback, js must be loaded first which could take a lot of time 
+
+Server side improves seo, using SSG 
+and SSR
+SSr- html responds to the currently lodded user
+SSR,all components must be hydrated, 
+drawback of ssr , having to load the data for the entire page,load the javascript for the entire page and hydrate the entire page 
+
+By default all components are server components, console.logs will be on the terminal
+
+Project on server actions , please check animevault in Next14 on your desktop
+
+
+Production build - doesnt quite refresh until it is build again
+Develoment server - can be refreshed
+
+Dynamic rendering- information depends on user  cookies, headers() and searchparams
+if any of the functions are used then it becomes dynamic
+
+
+
+ContextProviders - i.e using use context hook will only work in some client component, however using this in server side component will most likely result in an error.
+To adress this you can create a context and render its provider inside a separte client component, check the component folder and look at the theme provide file
+
+
+
+
+
+Server-Only Code : // if this code does run on a client side e.g in the client only
+//it will log sensitive information
+//hence to ensure this doesnt be used in a client side we install the packgae server-only
+//i.e npm i server-only
+//a build time error will occur is used in a client side
+
+PLEASE CHECK THE UTILS FOLDER AND THE SERVERONLY FOLDER
+Client-Only code : typicall interacts with the browser-specific features like the DOM, the window object, localSTorage etc which are nit available on the server, to prevent unintended server isde usage of client side code we can use a package called the client only
+
+Client placements: a component useing 'use client' shd be kept as low as possible in a  component three
+
+
+Interleaving Server and Client Components.

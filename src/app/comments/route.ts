@@ -9,10 +9,12 @@ import { comments } from "./data";
 export async function GET(request: NextRequest) {
   //to get all searchparams
   //request.nextUrl.searchParams.
-  const searchParams = request.nextUrl.searchParams;
+  const searchParams = request.nextUrl.searchParams; //acess all queryparameters
   const query = searchParams.get("query");
 
   //locahhost?query='somestuff'
+  
+  
   const filteredComments = query
     ? comments.filter((comment) => comment.text.includes(query))
     : comments;
