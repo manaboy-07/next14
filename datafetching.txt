@@ -1,0 +1,2 @@
+Here we will explore data fetching techniques using both server and client components .
+Server components supports various configurations for caching, revalidating , and optimizing data fetching.

@@ -16,4 +16,6 @@ export async function GET(request){
 
 Static and Dynamic Metadata
 
+To understand streaming look at product details folder
+
 

@@ -10,7 +10,7 @@ function ProductDetailPage() {
         <Suspense fallback={<p>Loading product detauls...</p>}>
           <Product />
         </Suspense>
-        <Suspense fallback={<p>Loading product detauls...</p>}>
+        <Suspense fallback={<p>Loading review detauls...</p>}>
           {" "}
           <Review />
         </Suspense>
